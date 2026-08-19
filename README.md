@@ -1,152 +1,197 @@
-# Documento de Requisitos
+# 📋 ParticipaCTBJ
 
-## 1. Introdução
+> **Plataforma para registro, organização e consulta da participação dos estudantes em atividades escolares e extracurriculares do Colégio Técnico de Bom Jesus (CTBJ).**
 
-### 1.1 Objetivo
+---
 
-O ParticipaCTBJ tem como objetivo registrar, organizar e permitir a consulta da participação dos estudantes em atividades escolares e extracurriculares.
+## 📌 1. Sobre o projeto
 
-### 1.2 Descrição do Sistema
+O **ParticipaCTBJ** é uma plataforma desenvolvida para facilitar o **registro, a organização e a consulta da participação dos estudantes** em atividades escolares e extracurriculares do Colégio Técnico de Bom Jesus (CTBJ).
 
-O sistema permitirá que atividades sejam cadastradas e que os estudantes participantes sejam registrados. Dessa forma, será possível consultar as atividades realizadas e o histórico de participação dos estudantes.
+A proposta é reunir em um único ambiente informações sobre as atividades realizadas pela escola e os estudantes que participaram delas.
 
-## 2. Requisitos Funcionais
+A plataforma permitirá o cadastro de estudantes e atividades, o registro das participações e a consulta do histórico de atividades de cada estudante.
 
-### RF01 — Cadastro de estudantes
+---
 
-O sistema deverá permitir o cadastro dos estudantes que participarão das atividades.
+## ❗ 2. Problema identificado
 
-### RF02 — Cadastro de atividades
+Os registros de participação dos estudantes em atividades escolares e extracurriculares podem estar espalhados em diferentes documentos, listas ou outros meios de controle.
 
-O sistema deverá permitir o cadastro de atividades realizadas pela escola.
+Essa situação pode dificultar a organização das informações e a consulta do histórico de participação dos estudantes.
 
-### RF03 — Registro de participação
+Diante desse cenário, identificou-se a necessidade de uma solução que **centralize os registros de participação e facilite sua organização e consulta**.
 
-O sistema deverá permitir registrar os estudantes participantes de cada atividade.
+---
 
-### RF04 — Consulta de atividades
+## 💡 3. Solução proposta
 
-O sistema deverá permitir consultar as atividades cadastradas.
+O **ParticipaCTBJ** propõe uma plataforma específica para registrar e organizar a participação dos estudantes em atividades escolares e extracurriculares.
 
-### RF05 — Consulta de participantes
+Por meio da plataforma, os usuários autorizados poderão:
 
-O sistema deverá permitir visualizar os estudantes participantes de uma determinada atividade.
+- Cadastrar estudantes;
+- Cadastrar atividades;
+- Registrar estudantes participantes;
+- Consultar atividades cadastradas;
+- Visualizar os participantes de uma atividade;
+- Consultar o histórico de participação dos estudantes;
+- Organizar atividades por categorias;
+- Visualizar informações gerais sobre a participação.
 
-### RF06 — Histórico de participação
+Dessa forma, a solução busca tornar o registro e o acompanhamento das participações **mais organizado, rápido e acessível**.
 
-O sistema deverá permitir que o estudante consulte as atividades das quais participou.
+---
 
-### RF07 — Categorias de atividades
+## 🎯 4. Objetivos
 
-O sistema deverá permitir organizar as atividades por categorias, como projetos, feiras, olimpíadas, apresentações, competições e oficinas.
+### 4.1 Objetivo geral
 
-### RF08 — Painel de participação
+Desenvolver uma plataforma que facilite o registro, a organização e a consulta da participação dos estudantes em atividades escolares e extracurriculares do CTBJ.
 
-O sistema deverá apresentar informações gerais sobre a participação dos estudantes nas atividades cadastradas.
+### 4.2 Objetivos específicos
 
-## 3. Requisitos Não Funcionais
+- Centralizar os registros de participação em uma única plataforma;
+- Facilitar a consulta das atividades realizadas;
+- Permitir o cadastro de estudantes;
+- Permitir o cadastro de atividades;
+- Registrar os estudantes participantes de cada atividade;
+- Organizar as atividades por categorias;
+- Disponibilizar o histórico de participação dos estudantes;
+- Apresentar informações gerais sobre a participação;
+- Facilitar o gerenciamento das atividades pela escola.
 
-### RNF01 — Usabilidade
+---
 
-O sistema deverá possuir uma interface simples e fácil de utilizar.
+## 👥 5. Público-alvo
 
-### RNF02 — Responsividade
+O **ParticipaCTBJ** será destinado principalmente a:
 
-O sistema deverá funcionar adequadamente em computadores, tablets e celulares.
+- **Estudantes do CTBJ:** poderão consultar suas próprias participações e o histórico de atividades;
+- **Professores do CTBJ:** poderão participar do cadastro e gerenciamento das atividades;
+- **Responsáveis pela organização escolar:** poderão gerenciar as informações das atividades e consultar os registros de participação.
 
-### RNF03 — Segurança
+---
 
-O sistema deverá impedir que usuários não autorizados alterem informações do sistema.
+## ⚙️ 6. Principais funcionalidades
 
-### RNF04 — Privacidade
+### 👨‍🎓 Para estudantes
 
-Os dados dos estudantes deverão ser acessíveis somente por usuários autorizados.
+- Acesso ao sistema;
+- Consulta das atividades;
+- Consulta do próprio histórico de participação;
+- Visualização das atividades das quais participou.
 
-### RNF05 — Desempenho
+### 👨‍🏫 Para professores
 
-O sistema deverá apresentar as informações de forma rápida durante as operações comuns.
+- Cadastro e gerenciamento de atividades;
+- Registro dos estudantes participantes;
+- Consulta dos participantes de cada atividade;
+- Organização das atividades por categorias.
 
-### RNF06 — Integridade dos dados
+### 🏫 Para responsáveis pela organização escolar
 
-O sistema deverá evitar informações duplicadas ou inconsistentes nos registros de estudantes, atividades e participações.
+- Cadastro de estudantes;
+- Cadastro de atividades;
+- Gerenciamento dos registros;
+- Consulta das participações;
+- Visualização das informações gerais do sistema.
 
-## 4. Regras de Negócio
+---
 
-### RN01 — Participação
+## 🔎 7. Organização das atividades
 
-Um estudante poderá participar de várias atividades.
+As atividades cadastradas poderão ser organizadas de acordo com:
 
-### RN02 — Atividade
+- **Categoria;**
+- **Nome da atividade;**
+- **Data da atividade;**
+- **Estudantes participantes.**
 
-Uma atividade poderá possuir vários estudantes participantes.
+### Exemplos de atividades
 
-### RN03 — Registro de participação
+| Categoria | Exemplos |
+|---|---|
+| 📚 Projetos | Projetos escolares e acadêmicos |
+| 🔬 Feiras | Feiras científicas e escolares |
+| 🏆 Olimpíadas | Olimpíadas e competições acadêmicas |
+| 🎤 Apresentações | Apresentações e atividades culturais |
+| 🥇 Competições | Competições esportivas ou acadêmicas |
+| 🛠️ Oficinas | Oficinas e atividades práticas |
+| 🏫 Eventos | Eventos escolares |
+| 📌 Outros | Outras atividades extracurriculares |
 
-Cada registro de participação deverá estar relacionado a um estudante e a uma atividade.
+---
 
-### RN04 — Participação sem notas
+## 🔍 8. Consulta de participação
 
-A participação registrada no sistema não deverá estar relacionada às notas ou ao desempenho acadêmico do estudante.
+A plataforma permitirá consultar as participações registradas no sistema.
 
-### RN05 — Alteração de registros
+Os usuários autorizados poderão visualizar os estudantes participantes de determinada atividade, enquanto os estudantes poderão consultar seu próprio histórico de participação.
 
-Somente usuários autorizados poderão alterar informações sobre atividades e participações.
+Essa funcionalidade ajudará a escola a manter os registros organizados e facilitará a consulta das atividades realizadas pelos estudantes.
 
-## 5. Tecnologias
+---
 
-As tecnologias utilizadas no desenvolvimento do sistema serão definidas durante as próximas etapas do projeto.
+## 📊 9. Painel de participação
 
-## 6. Escopo
+A plataforma contará com um painel para apresentar informações gerais sobre a participação dos estudantes nas atividades cadastradas.
 
-### 6.1 Dentro do escopo
+O painel poderá apresentar informações como:
 
-- Cadastro de estudantes
-- Cadastro de atividades
-- Registro de participação
-- Consulta de atividades
-- Consulta de participantes
-- Histórico de participação
-- Organização das atividades por categorias
-- Painel de participação
+- Quantidade de atividades cadastradas;
+- Quantidade de estudantes participantes;
+- Categorias de atividades;
+- Registros de participação.
 
-### 6.2 Fora do escopo
+---
 
-- Controle de notas
-- Controle de frequência
-- Cálculo de médias
-- Avaliação de desempenho acadêmico
-- Substituição de sistemas acadêmicos da instituição
-- Controle financeiro
-- Reserva de salas
-- Empréstimo de equipamentos
+## 🔐 10. Tipos de usuários
 
-## 7. Público-alvo
+| Usuário | Principais funções |
+|---|---|
+| **Estudante** | Consultar suas participações e histórico de atividades |
+| **Professor** | Cadastrar e gerenciar atividades e participações |
+| **Responsável pela organização escolar** | Gerenciar estudantes, atividades e registros |
 
-### 7.1 Estudantes
+---
 
-Poderão consultar suas próprias participações e o histórico de atividades.
+## 📈 11. Benefícios esperados
 
-### 7.2 Professores
+Com o desenvolvimento do **ParticipaCTBJ**, espera-se:
 
-Poderão participar do cadastro e gerenciamento das atividades.
+- Facilitar o registro das participações;
+- Melhorar a organização das informações;
+- Tornar a consulta das atividades mais rápida;
+- Facilitar o acompanhamento da participação dos estudantes;
+- Centralizar os registros em um único ambiente;
+- Facilitar o gerenciamento das atividades pela escola;
+- Disponibilizar o histórico de participação dos estudantes.
 
-### 7.3 Responsáveis pela organização escolar
+---
 
-Poderão gerenciar as informações das atividades e consultar os registros de participação.
+## 🛠️ 12. Tecnologias
 
-## 8. Atividades Registradas
+As tecnologias utilizadas no desenvolvimento do projeto serão definidas durante as próximas etapas.
 
-O sistema poderá registrar atividades como:
+A escolha deverá considerar as necessidades da plataforma, incluindo:
 
-- Projetos
-- Feiras
-- Olimpíadas
-- Apresentações
-- Competições
-- Oficinas
-- Eventos escolares
-- Outras atividades extracurriculares
+- Armazenamento de dados;
+- Autenticação de usuários;
+- Cadastro de estudantes;
+- Cadastro de atividades;
+- Registro de participação;
+- Consulta de informações;
+- Segurança e privacidade dos dados.
 
-## 9. Resultado Esperado
+---
 
-Espera-se que o ParticipaCTBJ facilite o registro, a organização e a consulta das participações dos estudantes em atividades escolares e extracurriculares, proporcionando à escola uma forma mais organizada de acompanhar essas informações.
+## 📂 13. Estrutura inicial do projeto
+
+```text
+ParticipaCTBJ/
+│
+├── README.md
+│
+└── docs/
+    └── requisitos.md
