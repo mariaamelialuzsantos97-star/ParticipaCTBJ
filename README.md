@@ -1,239 +1,152 @@
-# 📋 Documento de Requisitos — ParticipaCTBJ
-
-> Documento de requisitos da plataforma **ParticipaCTBJ**, desenvolvida para facilitar o registro, a organização e a consulta da participação dos estudantes em atividades escolares e extracurriculares do Colégio Técnico de Bom Jesus (CTBJ).
-
----
+# Documento de Requisitos
 
 ## 1. Introdução
 
 ### 1.1 Objetivo
 
-O objetivo deste documento é apresentar os requisitos necessários para o desenvolvimento do **ParticipaCTBJ**, definindo as principais funcionalidades e características que a plataforma deverá possuir.
+O ParticipaCTBJ tem como objetivo registrar, organizar e permitir a consulta da participação dos estudantes em atividades escolares e extracurriculares.
 
-### 1.2 Público-alvo
+### 1.2 Descrição do Sistema
 
-A plataforma será destinada principalmente a:
+O sistema permitirá que atividades sejam cadastradas e que os estudantes participantes sejam registrados. Dessa forma, será possível consultar as atividades realizadas e o histórico de participação dos estudantes.
 
-- **Alunos do CTBJ**;
-- **Professores do CTBJ**;
-- **Responsáveis pela organização das atividades escolares**.
+## 2. Requisitos Funcionais
 
----
+### RF01 — Cadastro de estudantes
 
-## 2. Descrição da solução
+O sistema deverá permitir o cadastro dos estudantes que participarão das atividades.
 
-O **ParticipaCTBJ** será uma plataforma para registrar e organizar a participação dos estudantes em atividades realizadas pela escola.
+### RF02 — Cadastro de atividades
 
-Os usuários autorizados poderão cadastrar atividades e registrar os alunos participantes.
+O sistema deverá permitir o cadastro de atividades realizadas pela escola.
 
-As atividades poderão incluir:
+### RF03 — Registro de participação
 
-- Projetos;
-- Feiras;
-- Olimpíadas;
-- Apresentações;
-- Competições;
-- Oficinas;
-- Eventos escolares;
-- Outras atividades extracurriculares.
+O sistema deverá permitir registrar os estudantes participantes de cada atividade.
 
-A plataforma permitirá consultar as atividades realizadas e o histórico de participação dos estudantes.
+### RF04 — Consulta de atividades
 
-O sistema não terá como objetivo registrar notas, frequência ou desempenho acadêmico.
+O sistema deverá permitir consultar as atividades cadastradas.
 
----
+### RF05 — Consulta de participantes
 
-## 3. Tipos de usuários
+O sistema deverá permitir visualizar os estudantes participantes de uma determinada atividade.
 
-| Usuário | Descrição |
-|---|---|
-| **Aluno** | Poderá consultar suas participações e o histórico de atividades das quais participou. |
-| **Professor** | Poderá cadastrar atividades e registrar os estudantes participantes, conforme suas permissões. |
-| **Responsável pela organização** | Poderá gerenciar atividades e consultar informações sobre as participações registradas. |
+### RF06 — Histórico de participação
 
----
+O sistema deverá permitir que o estudante consulte as atividades das quais participou.
 
-## 4. Requisitos Funcionais
+### RF07 — Categorias de atividades
 
-> Os requisitos funcionais descrevem as funcionalidades que o sistema deverá oferecer aos usuários.
+O sistema deverá permitir organizar as atividades por categorias, como projetos, feiras, olimpíadas, apresentações, competições e oficinas.
 
-### RF01 — Cadastro de usuário
+### RF08 — Painel de participação
 
-**Descrição:** O sistema deverá permitir o cadastro dos usuários que terão acesso à plataforma.
+O sistema deverá apresentar informações gerais sobre a participação dos estudantes nas atividades cadastradas.
 
-**Atores:** Aluno, Professor e Responsável pela organização.
+## 3. Requisitos Não Funcionais
 
-### RF02 — Login
+### RNF01 — Usabilidade
 
-**Descrição:** O sistema deverá permitir que usuários cadastrados realizem login para acessar as funcionalidades disponíveis para seu perfil.
+O sistema deverá possuir uma interface simples e fácil de utilizar.
 
-**Atores:** Aluno, Professor e Responsável pela organização.
+### RNF02 — Responsividade
 
-### RF03 — Cadastro de atividades
+O sistema deverá funcionar adequadamente em computadores, tablets e celulares.
 
-**Descrição:** O sistema deverá permitir que usuários autorizados cadastrem atividades realizadas pela escola.
+### RNF03 — Segurança
 
-**Informações da atividade:**
+O sistema deverá impedir que usuários não autorizados alterem informações do sistema.
 
-- Nome;
-- Descrição;
-- Categoria;
-- Data;
-- Local;
-- Responsável.
+### RNF04 — Privacidade
 
-**Atores:** Professor e Responsável pela organização.
+Os dados dos estudantes deverão ser acessíveis somente por usuários autorizados.
 
-### RF04 — Registro de participantes
+### RNF05 — Desempenho
 
-**Descrição:** O sistema deverá permitir registrar os estudantes que participaram de uma determinada atividade.
+O sistema deverá apresentar as informações de forma rápida durante as operações comuns.
 
-**Atores:** Professor e Responsável pela organização.
+### RNF06 — Integridade dos dados
 
-### RF05 — Consulta de atividades
+O sistema deverá evitar informações duplicadas ou inconsistentes nos registros de estudantes, atividades e participações.
 
-**Descrição:** O sistema deverá permitir que os usuários consultem as atividades cadastradas na plataforma.
+## 4. Regras de Negócio
 
-**Atores:** Aluno, Professor e Responsável pela organização.
+### RN01 — Participação
 
-### RF06 — Consulta de participantes
+Um estudante poderá participar de várias atividades.
 
-**Descrição:** O sistema deverá permitir visualizar os estudantes participantes de uma determinada atividade.
+### RN02 — Atividade
 
-**Atores:** Professor e Responsável pela organização.
+Uma atividade poderá possuir vários estudantes participantes.
 
-### RF07 — Histórico de participação
+### RN03 — Registro de participação
 
-**Descrição:** O sistema deverá permitir que o aluno consulte o histórico das atividades das quais participou.
+Cada registro de participação deverá estar relacionado a um estudante e a uma atividade.
 
-**Ator:** Aluno.
+### RN04 — Participação sem notas
 
-### RF08 — Organização por categorias
+A participação registrada no sistema não deverá estar relacionada às notas ou ao desempenho acadêmico do estudante.
 
-**Descrição:** O sistema deverá permitir organizar as atividades de acordo com suas categorias.
+### RN05 — Alteração de registros
 
-**Exemplos:**
+Somente usuários autorizados poderão alterar informações sobre atividades e participações.
 
-1. Projetos;
-2. Feiras;
-3. Olimpíadas;
-4. Apresentações;
-5. Competições;
-6. Oficinas;
-7. Eventos.
+## 5. Tecnologias
 
-**Atores:** Professor e Responsável pela organização.
+As tecnologias utilizadas no desenvolvimento do sistema serão definidas durante as próximas etapas do projeto.
 
-### RF09 — Painel de participação
+## 6. Escopo
 
-**Descrição:** O sistema deverá apresentar informações organizadas sobre as participações registradas, permitindo visualizar dados gerais das atividades e dos estudantes participantes.
+### 6.1 Dentro do escopo
 
-**Ator:** Responsável pela organização.
+- Cadastro de estudantes
+- Cadastro de atividades
+- Registro de participação
+- Consulta de atividades
+- Consulta de participantes
+- Histórico de participação
+- Organização das atividades por categorias
+- Painel de participação
 
-### RF10 — Diferenciação de usuários
+### 6.2 Fora do escopo
 
-**Descrição:** O sistema deverá identificar os diferentes tipos de usuários e disponibilizar as funcionalidades correspondentes a cada perfil.
+- Controle de notas
+- Controle de frequência
+- Cálculo de médias
+- Avaliação de desempenho acadêmico
+- Substituição de sistemas acadêmicos da instituição
+- Controle financeiro
+- Reserva de salas
+- Empréstimo de equipamentos
 
-**Tipos de usuário:**
+## 7. Público-alvo
 
-1. Aluno;
-2. Professor;
-3. Responsável pela organização.
+### 7.1 Estudantes
 
----
+Poderão consultar suas próprias participações e o histórico de atividades.
 
-## 5. Requisitos Não Funcionais
+### 7.2 Professores
 
-> Os requisitos não funcionais definem características de qualidade e funcionamento que a plataforma deverá apresentar.
+Poderão participar do cadastro e gerenciamento das atividades.
 
-| Código | Requisito | Descrição |
-|---|---|---|
-| **RNF01** | Usabilidade | A plataforma deverá possuir uma interface simples e fácil de utilizar. |
-| **RNF02** | Segurança | Os dados dos usuários e estudantes deverão ser protegidos contra acesso não autorizado. |
-| **RNF03** | Desempenho | As consultas e buscas deverão apresentar os resultados de forma rápida. |
-| **RNF04** | Organização | As informações sobre atividades e participações deverão ser apresentadas de maneira organizada. |
-| **RNF05** | Responsividade | A plataforma deverá funcionar adequadamente em computadores, tablets e celulares. |
-| **RNF06** | Privacidade | As informações pessoais dos estudantes deverão ser acessíveis somente aos usuários autorizados. |
+### 7.3 Responsáveis pela organização escolar
 
----
+Poderão gerenciar as informações das atividades e consultar os registros de participação.
 
-## 6. Atividades registradas
+## 8. Atividades Registradas
 
-A plataforma deverá permitir o registro de diferentes tipos de atividades escolares, como:
+O sistema poderá registrar atividades como:
 
-- **Projetos**;
-- **Feiras**;
-- **Olimpíadas**;
-- **Apresentações**;
-- **Competições**;
-- **Oficinas**;
-- **Eventos escolares**;
-- **Outras atividades extracurriculares**.
+- Projetos
+- Feiras
+- Olimpíadas
+- Apresentações
+- Competições
+- Oficinas
+- Eventos escolares
+- Outras atividades extracurriculares
 
----
+## 9. Resultado Esperado
 
-## 7. Organização das atividades
-
-As atividades poderão ser organizadas utilizando diferentes informações:
-
-| Categoria | Exemplos |
-|---|---|
-| **Tipo de atividade** | Projeto, Feira, Olimpíada, Competição |
-| **Período** | Data de realização |
-| **Local** | Espaço onde a atividade ocorreu |
-| **Responsável** | Professor ou responsável pela atividade |
-
-Essa organização deverá facilitar a consulta das atividades e das participações registradas.
-
----
-
-## 8. Fluxo básico do sistema
-
-O funcionamento básico da plataforma seguirá o seguinte fluxo:
-
-1. O usuário acessa a plataforma;
-2. Realiza o **cadastro** ou **login**;
-3. O usuário acessa as funcionalidades disponíveis para seu perfil;
-4. O professor ou responsável cadastra uma atividade;
-5. Os estudantes participantes são registrados;
-6. As informações ficam armazenadas na plataforma;
-7. O aluno poderá consultar seu histórico de participação;
-8. Os responsáveis poderão consultar as informações gerais das participações.
-
----
-
-## 9. Regras gerais
-
-- O usuário deverá possuir uma conta para utilizar as funcionalidades que exigem autenticação.
-- Cada atividade deverá possuir informações básicas para seu cadastro.
-- Uma atividade poderá possuir vários estudantes participantes.
-- Um estudante poderá participar de várias atividades.
-- Cada registro de participação deverá estar relacionado a um estudante e a uma atividade.
-- Somente usuários autorizados poderão cadastrar ou alterar informações das atividades e participações.
-- A participação registrada não deverá ser utilizada para calcular notas ou médias.
-- O sistema não terá como finalidade avaliar o desempenho acadêmico dos estudantes.
-
----
-
-## 10. Relação entre solução e requisitos
-
-| Funcionalidade da solução | Requisito relacionado |
-|---|---|
-| Cadastro de usuários | RF01 |
-| Login | RF02 |
-| Cadastro de atividades | RF03 |
-| Registro de participantes | RF04 |
-| Consulta de atividades | RF05 |
-| Consulta de participantes | RF06 |
-| Histórico de participação | RF07 |
-| Organização por categorias | RF08 |
-| Painel de participação | RF09 |
-| Diferentes tipos de usuários | RF10 |
-
----
-
-## 11. Considerações finais
-
-O **ParticipaCTBJ** tem como proposta facilitar o registro, a organização e a consulta da participação dos estudantes em atividades escolares e extracurriculares do CTBJ.
-
-Os requisitos apresentados neste documento servirão como base para as próximas etapas de desenvolvimento do projeto, orientando a construção das funcionalidades da plataforma.zada de acompanhar essas informações.
+Espera-se que o ParticipaCTBJ facilite o registro, a organização e a consulta das participações dos estudantes em atividades escolares e extracurriculares, proporcionando à escola uma forma mais organizada de acompanhar essas informações.
